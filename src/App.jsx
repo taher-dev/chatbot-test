@@ -8,12 +8,14 @@ function App() {
   
   return (
     <div className='flex flex-col h-screen p-4 max-w-screen-sm mx-auto'>
+      <div className='flex-grow overflow-y-auto'>
+        <ChatMessages 
+          chatMessages={chatMessages}
+        />
+      </div>
       <ChatInput 
         chatMessages={chatMessages}
         setChatMessages={setChatMessages}
-      />
-      <ChatMessages 
-        chatMessages={chatMessages}
       />
     </div>
   )

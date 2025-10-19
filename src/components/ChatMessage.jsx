@@ -4,23 +4,25 @@ import chatbotImage from '../assets/images/chatbot.png'
 
 function ChatMessage({ message, sender }) {
   return (
-    <div>
+    <>
         {sender === 'chatbot' && (
           <img 
             src={chatbotImage} 
             alt='chatbot' 
-            width='50px'
+            className='w-[50px] h-[50px] object-cover'
           ></img>
         )}
-        {message}
+        <div className='bg-gray-100 p-3 rounded-lg'>
+          {message}
+        </div>
         {sender === 'user' && (
           <img 
             src={userImage} 
             alt='user' 
-            width='50px'
+            className='w-[50px] h-[50px] object-cover'
           ></img>
         )}
-    </div>
+    </>
   )
 }
 

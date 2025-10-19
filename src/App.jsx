@@ -23,7 +23,7 @@ function App() {
 }]);
   
   return (
-    <>
+    <div className='flex flex-col h-screen p-4 max-w-screen-sm mx-auto'>
       <ChatInput 
         chatMessages={chatMessages}
         setChatMessages={setChatMessages}
@@ -31,7 +31,7 @@ function App() {
       <ChatMessages 
         chatMessages={chatMessages}
       />
-    </>
+    </div>
   )
 }
 

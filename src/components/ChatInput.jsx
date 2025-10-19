@@ -41,14 +41,17 @@ function ChatInput({ chatMessages, setChatMessages }) {
   }
 
   return (
-    <div className="chat-input-container">
+    <div className="flex items-center justify-center mb-4">
       <input
+        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:border-blue-400 p-2.5 flex-grow"
         placeholder='Send a message to chatbot'
         value={inputText}
         onChange={saveInputText}
         onKeyDown={handleKeyDown}
       />
-      <button onClick={sendMessage}>Send</button>
+      <button 
+        className="bg-blue-400 hover:bg-blue-500 hover:opacity-90 text-white ml-2 py-2 px-4 rounded-lg cursor-pointer transition duration-200 ease-in-out"
+        onClick={sendMessage}>Send</button>
     </div>
   );
 }

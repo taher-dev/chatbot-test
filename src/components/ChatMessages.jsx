@@ -1,24 +1,10 @@
 import React from 'react'
+import { useState } from 'react'
 import ChatMessage from './ChatMessage'
 
-function ChatMessages() {
-    const chatMessages = [{
-            message: 'hello chatbot',
-            sender: 'user',
-            id: crypto.randomUUID()
-        }, {
-            message: 'Hello! How can I help you?',
-            sender: 'chatbot',
-            id: crypto.randomUUID()
-        }, {
-            message: 'hello chatbot',
-            sender: 'user',
-            id: crypto.randomUUID()
-        }, {
-            message: 'Hello! How can I help you?',
-            sender: 'chatbot',
-            id: crypto.randomUUID()
-    }]
+function ChatMessages({ chatMessages }) {
+
+
   return (
     <>
         {chatMessages.map((chatMessage) => {

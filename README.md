@@ -1,16 +1,44 @@
-# React + Vite
+# Simple Chatbot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple chatbot application built with React and Vite. It uses the `supersimpledev/chatbot.js` library to provide basic conversational responses.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The chatbot can currently perform the following actions:
 
-## React Compiler
+*   **Flip a coin:** Ask the chatbot to "flip a coin" and it will return either "heads" or "tails".
+*   **Roll a dice:** Ask the chatbot to "roll a dice" and it will return a random number between 1 and 6.
+*   **Get today's date:** Ask the chatbot "what is today's date?" and it will return the current date.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the ESLint configuration
+To get a local copy up and running, follow these simple steps.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+You need to have Node.js and npm installed on your machine.
+
+### Installation
+
+1.  Clone the repo:
+    ```sh
+    git clone https://github.com/your_username/your_project_name.git
+    ```
+2.  Install NPM packages:
+    ```sh
+    npm install
+    ```
+3.  Run the development server:
+    ```sh
+    npm run dev
+    ```
+
+## Usage
+
+Once the application is running, you can interact with the chatbot by typing messages in the input field and clicking the "Send" button or pressing the Enter key.
+
+## Technology Stack
+
+*   [React](https://reactjs.org/)
+*   [Vite](https://vitejs.dev/)
+*   [supersimpledev/chatbot.js](https://unpkg.com/supersimpledev/chatbot.js)
